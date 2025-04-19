@@ -1,0 +1,13 @@
+[package]
+name = "climageproc"
+version = "0.1.0"
+edition = "2021"
+authors = ["Your Name"]
+description = "A CLI tool for batch image processing"
+
+[dependencies]
+image = "=0.23.14"           # For image processing, pinned to a version compatible with Rust 1.80
+clap = { version = "4.4", features = ["derive"] }  # For CLI argument parsing
+rayon = "1.8"           # For parallel processing
+anyhow = "1.0"          # For error handling
+indicatif = "0.17"      # For progress bars
